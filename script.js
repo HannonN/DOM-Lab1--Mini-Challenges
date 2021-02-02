@@ -56,23 +56,33 @@ let onButton = document.querySelector(".on-button");
 let offButton = document.querySelector(".off-button");
 let toggleButton = document.querySelector(".toggle-button");
 let endButton = document.querySelector(".end-button");
+let buttons = document.querySelectorAll(".btn");
 
 onButton.addEventListener("click", () => {
   lightBulb.classList.add("lights-on");
 });
 
 offButton.addEventListener("click", () => {
-  lightBulb.classList.add("lights-off");
+  lightBulb.classList.remove("lights-on");
 });
 
 toggleButton.addEventListener("click", () => {
-  if (lightBulb.style.backgroundColor === "gray") {
-    lightBulb.style.backgroundcolor = "yellow";
-  } else if (lightBulb.style.backgroundColor === "yellow") {
-    lightBulb.style.backgroundColor = "gray";
-  }
+  lightBulb.classList.toggle("lights-on");
 });
 
+//
+// Note - toggle perfomred the if/else if loop I was trying to create.
+// toggleButton.addEventListener("click", () => {
+//   if (lightBulb.style.backgroundColor  ) {
+//     lightBulb.style.backgroundcolor = ;
+//   } else if (lightBulb.style.backgroundColor ) {
+//     lightBulb.style.backgroundColor = ;
+//   }
+// });
+
 endButton.addEventListener("click", () => {
-  lightBulb.classList.add("disappear");
+  lightBulb.remove();
+  buttons.forEach((item) => {
+    item.disabled = true;
+  });
 });
