@@ -1,0 +1,89 @@
+body {
+  padding: 10px;
+  margin: 10px;
+}
+.total {
+  background-color: azure;
+  border: dashed 2px black;
+}
+
+.make-money-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.money-button {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.coin {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.penny {
+  background-color: rgba(152, 55, 7, 0.565);
+  width: 40px;
+  height: 40px;
+}
+.nickel {
+  background-color: rgba(99, 98, 98, 0.565);
+  width: 50px;
+  height: 50px;
+}
+.dime {
+  background-color: rgba(99, 98, 98, 0.565);
+  width: 30px;
+  height: 30px;
+}
+.quarter {
+  background-color: rgba(99, 98, 98, 0.565);
+  width: 65px;
+  height: 65px;
+}
+
+.lightbulb-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+}
+
+.lightbulb {
+  background-color: gray;
+  color: white;
+  height: 50px;
+  border: solid 3px black;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.lights-on {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  border: solid 3px black;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.lights-off {
+  background-color: gray;
+  color: white;
+  height: 50px;
+  border: solid 3px black;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.toggled-lights {
+}
